@@ -15,6 +15,7 @@
   line-height: 1;
   white-space: nowrap;
 }
+
 @media only screen and (max-width: 767px) {
   .btn-text {
     display: flex;
@@ -25,10 +26,12 @@
     white-space: normal;
   }
 }
+
 .btn-text__text {
   position: relative;
   display: inline-block;
 }
+
 .btn-text__line {
   --line-height: 0.15rem;
   position: absolute;
@@ -37,21 +40,26 @@
   width: 100%;
   height: var(--line-height);
 }
+
 @media only screen and (max-width: 987px) {
   .btn-text__line {
     display: none;
   }
 }
+
 .btn-text__line path {
   stroke-width: 0;
   transition: stroke-width 0s linear 0.1s;
 }
+
 .btn-text__line path:first-child {
   stroke: var(--color-brand-1);
 }
+
 .btn-text__line path:last-child {
   stroke: var(--color-black);
 }
+
 .btn-text .a-svg {
   position: absolute;
   top: calc(50% + 0.1em - var(--arrow-size) * var(--arrow-ratio) * 0.5);
@@ -64,44 +72,55 @@
   transform: translate3d(0, 0, 0);
   transition: transform 0.1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .btn-text:hover .a-svg--arrow-1-right {
   transform: translate3d(0.1em, 0, 0);
 }
+
 .btn-text:hover .a-svg--arrow-down {
   transform: translate3d(0, 0.1em, 0);
 }
+
 .btn-text:hover .btn-text__line path {
   transition-delay: 0s;
 }
+
 .btn-text:hover .btn-text__line path:first-child {
   stroke-width: calc(var(--line-height) * 0.8);
 }
+
 .btn-text:hover .btn-text__line path:last-child {
   stroke-width: var(--line-height);
 }
+
 .btn-text--sm {
   font-size: var(--font-size-h-4xs);
   white-space: normal;
 }
+
 @media only screen and (max-width: 767px) {
   .btn-text--sm {
     font-size: var(--font-size-h-4xs);
   }
 }
+
 .btn-text--right {
   --arrow-ratio: 0.75;
   --arrow-size: 0.8em;
 }
+
 @media only screen and (max-width: 767px) {
   .btn-text--right {
     --arrow-size: 1.3em;
     padding-right: calc(var(--arrow-size) + 1em);
   }
 }
+
 .btn-text--down {
   --arrow-ratio: 1.3913;
   --arrow-size: 0.6em;
 }
+
 @media only screen and (max-width: 767px) {
   .btn-text--down {
     --arrow-size: 1.046em;

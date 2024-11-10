@@ -1,0 +1,40 @@
+.a-waves {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.a-waves:before {
+  display: block;
+  padding-top: 30.0562%;
+  content: "";
+}
+
+@keyframes a-waves {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(50%, 0, 0);
+  }
+}
+
+.a-waves:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 200%;
+  height: 100%;
+  background: url("/wp-content/themes/nod/static/images/asset-waves-white-lg.png")
+    left top/50% 100% repeat;
+  animation: a-waves 10s linear infinite;
+  content: "";
+}
+
+.a-waves--blue:after {
+  background-image: url("/wp-content/themes/nod/static/images/asset-waves-blue-lg.png");
+}

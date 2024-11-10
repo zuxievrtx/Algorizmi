@@ -6,12 +6,14 @@
   z-index: 10;
   width: auto;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head {
     right: calc(var(--container-offset) / 2);
     left: calc(var(--container-offset) / 2);
   }
 }
+
 .site-head__inner {
   display: flex;
   flex-direction: row;
@@ -26,6 +28,7 @@
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   will-change: transform;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__inner {
     padding-top: 0;
@@ -33,12 +36,15 @@
     padding-bottom: 0;
   }
 }
+
 .is-nav-hidden .site-head__inner {
   transform: translate3d(0, calc(-100% - 1.0833rem), 0);
 }
+
 .site-head .s__toggle {
   display: none;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head .s__toggle {
     position: relative;
@@ -51,6 +57,7 @@
     cursor: pointer;
   }
 }
+
 .site-head .s__toggle__line {
   position: absolute;
   top: 50%;
@@ -62,34 +69,43 @@
   transition: translate 0.2s cubic-bezier(0.86, 0, 0.07, 1),
     rotate 0.2s cubic-bezier(0.86, 0, 0.07, 1);
 }
+
 .site-head .s__toggle__line:first-child {
   translate: -50% calc(-50% - 3.5px) 0;
 }
+
 .site-head .s__toggle__line:last-child {
   translate: -50% calc(-50% + 3.5px) 0;
 }
+
 .is-nav-opened .site-head .s__toggle {
   background-color: var(--color-brand-3);
 }
+
 .is-nav-opened .site-head .s__toggle__line:first-child {
   rotate: 45deg;
   translate: -50% -50% 0;
 }
+
 .is-nav-opened .site-head .s__toggle__line:last-child {
   rotate: -45deg;
   translate: -50% -50% 0;
 }
+
 .site-head .s__logo {
   position: relative;
   z-index: 3;
 }
+
 .site-head .s__logo a {
   display: inline-block;
 }
+
 .site-head .s__logo img {
   width: auto;
   height: 1.25rem;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head .s__wrapper {
     position: absolute;
@@ -106,29 +122,34 @@
     will-change: opacity;
   }
 }
+
 @media only screen and (max-width: 987px) {
   .is-nav-opened .site-head .s__wrapper {
     opacity: 1;
     pointer-events: auto;
   }
 }
+
 @media only screen and (max-width: 987px) {
   .site-head .s__wrapper__inner {
     position: relative;
     padding: 1.75rem 2rem 0;
   }
 }
+
 .site-head .s__wrapper__footer {
   position: relative;
   display: none;
   margin: 1.2222rem 0 0;
   width: 100%;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head .s__wrapper__footer {
     display: block;
   }
 }
+
 .site-head .s__wrapper__footer__background {
   position: absolute;
   right: -2rem;
@@ -140,13 +161,16 @@
   border-radius: 0 0 1.5rem 1.5rem;
   transform-origin: 100% 50%;
 }
+
 .site-head .s__wrapper__footer .s__head {
   width: 100%;
 }
+
 .site-head .nav-main {
   position: relative;
   z-index: 3;
 }
+
 .site-head__menu {
   display: flex;
   flex-direction: row;
@@ -159,6 +183,7 @@
   font-weight: 600;
   line-height: 1;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__menu {
     display: flex;
@@ -168,33 +193,41 @@
     font-size: 2.1111rem;
   }
 }
+
 .site-head__menu .menu-item {
   margin: 0 2em 0 0;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__menu .menu-item {
     margin: 0 0 1rem;
   }
 }
+
 .site-head__menu .menu-item:last-child {
   margin-right: 0;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__menu .menu-item.btn .btn-plain {
     color: var(--color-white);
   }
 }
+
 .site-head__menu .menu-item .btn-plain {
   display: block;
 }
+
 .site-head__menu .menu-item--home {
   display: none;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__menu .menu-item--home {
     display: block;
   }
 }
+
 .site-head__menu .menu-item__line {
   position: absolute;
   bottom: 0.2em;
@@ -202,32 +235,39 @@
   width: calc(100% - 1em);
   height: 0.1rem;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__menu .menu-item__line {
     display: none;
   }
 }
+
 .site-head__menu .menu-item__line path {
   stroke-width: 0;
   transition: stroke-width 0s linear 0.1s;
 }
+
 .site-head__menu .menu-item__line path:first-child {
   stroke: var(--color-brand-2);
 }
+
 .site-head__menu .menu-item__line path:last-child {
   stroke: var(--color-brand-5);
 }
+
 .site-head__menu .menu-link {
   position: relative;
   padding: 0.5em;
   color: var(--color-black);
   transition: color 0.2s ease-in-out;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__menu .menu-link {
     padding: 0;
   }
 }
+
 .site-head__menu .menu-link:before {
   position: absolute;
   top: calc(50% - 3px);
@@ -241,61 +281,76 @@
   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   content: "";
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__menu .menu-link:before {
     display: block;
   }
 }
+
 .site-head__menu .menu-link:hover .menu-item__line path {
   transition-delay: 0s;
 }
+
 .site-head__menu .menu-link:hover .menu-item__line path:first-child {
   stroke-width: 0.08rem;
 }
+
 .site-head__menu .menu-link:hover .menu-item__line path:last-child {
   stroke-width: 0.1rem;
 }
+
 .site-head__menu .current-menu-item .menu-link {
   color: var(--color-brand-5);
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__menu .current-menu-item .menu-link {
     color: var(--color-black);
   }
 }
+
 .site-head__menu .current-menu-item .menu-link:before {
   transform: translate3d(0, 0, 0) scale(1);
 }
+
 @media only screen and (max-width: 987px) {
   .site-head__menu .btn-plain {
     color: var(--color-black);
     font-size: 1em;
   }
+
   .site-head__menu .btn-plain__inner {
     padding: 0;
     border-radius: 0;
     overflow: visible;
   }
+
   .site-head__menu .btn-plain__background {
     display: none;
   }
+
   .site-head__menu .btn-plain__arrow {
     display: none;
   }
+
   .site-head__menu .btn-plain:hover {
     background: none;
     color: var(--color-white);
   }
 }
+
 .site-head .s__socials {
   display: none;
   margin: 1rem 0 0;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head .s__socials {
     display: flex;
   }
 }
+
 .site-head .s__background {
   position: absolute;
   top: 0;
@@ -312,16 +367,19 @@
     translate 1s cubic-bezier(0.19, 1, 0.22, 1);
   will-change: translate, scale;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head .s__background {
     translate: 0 0 0;
     scale: 1 1;
   }
 }
+
 .is-nav-small .site-head .s__background {
   translate: 0 0 0;
   scale: 1 1;
 }
+
 .site-head .s__overlay {
   position: fixed;
   top: 0;
@@ -336,11 +394,13 @@
   pointer-events: none;
   will-change: opacity;
 }
+
 @media only screen and (max-width: 987px) {
   .site-head .s__overlay {
     display: block;
   }
 }
+
 .is-nav-opened .site-head .s__overlay {
   opacity: 1;
   pointer-events: auto;
