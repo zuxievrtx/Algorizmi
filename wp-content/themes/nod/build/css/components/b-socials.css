@@ -16,7 +16,6 @@
 }
 .b-socials .b__link {
   display: block;
-  background: var(--color-black);
   -webkit-mask-size: 100%;
   mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
